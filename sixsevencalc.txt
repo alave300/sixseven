@@ -1,0 +1,20 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+    
+    int main(){
+        float a = 0;
+        float b = 0;
+        float c = 0;
+        cout << "ieraksti a:" <<endl;
+        cin >> a;
+        cout << "ieraksti b" <<endl;
+        cin >> b;
+        cout << "ieraksti c" <<endl;
+        cin >> c;
+        cout << "rezultats ir:" <<endl;
+    float x1 = ((b*-1 + sqrt(b*b-(4*a*c)))/(2*a));
+    float x2 = ((b*-1 - sqrt(b*b-(4*a*c)))/(2*a));
+    cout << x1 << endl;
+    cout << x2;
+    }
