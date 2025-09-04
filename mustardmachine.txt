@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+    
+    int main(){
+    int sixseven;
+    cout<< "cik ir 6+7?😜" <<endl;
+    cin>> sixseven;
+    
+     if (sixseven == 67){
+        cout<< "MUSTAAAAARD😃";
+    } else if (sixseven == 13) {
+        cout<< "tu esi gudrinieks 😎";
+    } else if (sixseven == 41) {
+        cout<< "DID UNC SNAP? 😮";
+    } else {
+        cout<< "tu esi stulbenis 😡";
+    }
+    }
