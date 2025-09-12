@@ -1,0 +1,21 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+    
+    int main(){
+    int skaitlis;
+    
+    cout<<"Cik tev cilveki ies uz asain mart?"<<endl;
+    cin>>skaitlis;
+    
+     if (skaitlis == 0){
+        cout<<"Tu esi idiots😡";
+     }
+    else if (skaitlis % 2 == 0){
+        cout<<"Tev pietiek "<<(skaitlis /2)<<" man"<<endl;
+
+    }
+    else {
+        cout<<"Tev vajag nemt svanu 🤞";
+    }
+    }
