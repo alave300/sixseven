@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std; 
+int main() { 
+    int skaitlis;
+    int s1 = 0;
+    int s2 = 1;
+    int temp;
+   cout<<"ievadi skaitli"<<endl;
+   cin>>skaitlis;
+ for (int i=1; i<=skaitlis; i++){
+ cout<<s1<<" ";
+ temp = s1 + s2;
+s1 = s2;
+s2 = temp;
+
+    }
+    cout<<endl;
+    int summa = temp;
+    cout<<summa;
+    
+ }
