@@ -1,0 +1,141 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std; 
+int main() { 
+    int kambaris;
+    int cibas;
+    int cina;
+    int est;
+    int freshmen;
+    int armija;
+    int pad;
+    int fit;
+    int rate;
+    int sekla;
+    
+    srand(time(0));
+    
+cout<<"Tev uzbruk svans, kur tu lidosi?"<<endl<<"1: Feldžas bēniņi"<<endl<<"2: Svana freshman kambaris"<<endl<<"3: Upeslejas fit kabinets"<<endl;
+cin>>kambaris;
+while(kambaris>3){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>kambaris;
+}
+while(kambaris<1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi."<<endl;
+  cin>>kambaris;
+}
+if (kambaris==1){
+    cout<<"Tu ieraugi feldžas čības vai tu:"<<endl<<"1:Sāc staigāt kā prezidenta priekšā ar čībām?"<<endl<<"2:Sac strechingu ar čībām"<<endl;
+    cin>>cibas;
+    while(cibas!=2 && cibas !=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>cibas;
+}
+    if(cibas==1){
+        cout<<"Tu dabu feldža respect vai tu cinies ar svanu?"<<endl<<"1:ja"<<endl<<"2:Ne"<<endl;
+        cin>>cina;
+        while(cina!=2 && cina !=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>cina;
+}
+        if (cina == 1){
+            cout<<"Tu izcini svanu ar feldžu un jūs atbrīvojat visus freshmen 🤪";
+        }
+        else if (cina == 2){
+            cout<<"Svans tevi noker un padara tevi par freshmen";
+        }
+            
+        }
+    
+    else if (cibas==2){
+    cout<<"Tevi megina apest feldža un svans 🤣"<<endl<<"Vai tu megini pretoties?"<<endl<<"1:Ja"<<endl<<"2:Ne"<<endl;
+    cin>>est;
+    while(est!=2 && est !=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>est;
+}
+    if(est == 1){
+        cout<<"Tu nokauj feldžu bet svans tevi sapigi aped😡";
+    }
+    else if(est == 2){
+        cout<<"Tevi mierigi aped svans ar feldžu 😎";
+    }
+    }
+}
+
+else if(kambaris==2){
+    cout<<"Tu ieraugi freshmenus vai tu vinus atbrivo?"<<endl<<"1:Jā"<<endl<<"2:Nē"<<endl;
+    cin>>freshmen;
+    while(freshmen!=2 && freshmen !=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>cibas;
+}
+    if(freshmen == 1){
+        cout<<"tagad tev ir freshmen armija."<<endl<<"Vai tu cinies ar svanu?"<<endl<<"1:Jā"<<endl<<"2:Nē"<<endl;
+        cin>>armija;
+        while(armija!=2 && armija !=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>armija;
+}
+        if(armija == 1){
+            cout<<"Jums neizdodas un svans visus atkal ieslodza kambari 🤞";
+        }
+        else if(armija == 2){
+            cout<<"svans visus atkal ieslodza kambari 😊";
+        }
+    }
+    else if(freshmen == 2){
+        cout<<"svans tevi atrada, ko tu velies darit?"<<endl<<"1:skriet pie freshmeniem"<<endl<<"2:padoties svanam"<<endl;
+        cin>>pad;
+        while(pad!=2 && pad!=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>pad;
+}
+        if (pad == 1){
+            cout<<"Svans tevi noker un brutali parveido par freshmen 😁";
+        }
+        else if(pad == 2){
+             cout<<"Svans tevi noker un mierigi parveido par freshmen 😛";
+        }
+    }
+
+}
+else if(kambaris==3){
+    cout<<"Tu redzi 2 tuffakos fitus pasaule kuru tu izvelies?"<<endl<<"1:Slimnicas fit"<<endl<<"2:Fermer fit"<<endl;
+    cin>>fit;
+    while(fit!=2 && fit!=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>cibas;
+}
+    if(fit == 1){
+        cout<<"WOW tur ar tik tuff fitu. Svans to verte "<<rand() % 11<<endl<<" vai tu esi apmierinats ar svana reitingu?"<<endl<<"1:Jā"<<endl<<"2:Nē"<<endl;
+        cin>>rate;
+        while(rate!=2 && rate !=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>rate;
+}
+        if (rate == 1){
+            cout<<"svans tevi ieludz uz freshmen kambari 😂";
+        }
+        else if(rate == 2){
+            cout<<"svans tev norauj tavu fit un iemeti tevi kambari ❤️";
+        }
+    }
+    else if (fit == 2){
+        cout<<"tu izbedz no svana un sac fermot. tu dzivo kalna maja un ir pagajusi 5 gadi"<<endl<<"kadu seklu tu gribi ielikt ferma?"<<endl<<"1:parastu seklu"<<endl<<"2:😍svana auga seklu😍"<<endl;
+        cin>>sekla;
+        while(sekla!=2 && sekla !=1){
+  cout<<"Tevi nokera svans, bet tu izbegi. Tagad izvelies pareizi.👌"<<endl;
+  cin>>sekla;
+}
+        if(sekla == 1){
+            cout<<"tu esi stulbs😒";
+        }
+        else if(sekla == 2){
+            cout<<"pec laika izaug svans un jus dzivojat priecigi ejot 2manos😘";
+        }
+    }
+}
+ }
