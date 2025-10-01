@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std; 
+int main() {
+int sk;
+int dal = 1;
+int dal2 = 1;
+int i = 1;
+cout<<"Ievadi divciparu skaitli"<<endl;
+cin>>sk;
+if(sk<0 || sk>100){
+    cout<<"divciparu skaitli";
+    cin>>sk;
+}
+else{
+    while(!(sk<=9 && sk>=1)){
+        
+    dal = sk / 10;
+    dal2 = sk % 10;
+    sk=dal*dal2;
+    if(sk<=9){
+        break;
+    }
+    i++;
+    cout<<sk<<endl;
+    }
+    cout<<"skaitļa stiprums ir "<<sk;
+
+    
+}
+}
