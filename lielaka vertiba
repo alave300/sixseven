@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int m(vector<int> a){
+    int l=a[0];
+    for(int i=0; i<a.size(); i++){
+        if(l<a[i]){
+            l=a[i];
+        }
+    }
+    cout<<l<<endl;
+    return l;
+}
+
+int main(){
+vector<int> c = {75,32,78,32,46,86,312,63,234,33,123,75};
+m(c);
+vector<int> b = {8,45,2,79,8,78,5,6,8,23,21};
+m(b);
+vector<int> a = {1,2,3,4,5,7,9,6};
+m(a);
+}
