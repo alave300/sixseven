@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+float c(vector<float> a){
+    float s=0;
+for(int i=0; i<a.size(); i++){
+    s= s+a[i];
+}
+return s/a.size();
+}
+
+int main(){
+    vector<float> v={4,7,5,8,9,6,20};
+    cout<<c(v);
+}
