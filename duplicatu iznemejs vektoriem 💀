@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+vector <int> c(vector <int> a){
+vector <int> o;
+int f = 0;
+for(int i=0; i<a.size(); i++){
+    //bija i<a.size() bet bija jabut j<o.size
+    for(int j=0; j<o.size(); j++){
+    if(a[i]==o[j]){
+        f = 1;
+        break;
+    }
+    }
+    if(f ==0){
+        o.push_back(a[i]);
+}
+f = 0;
+
+}
+//return bija ieksa loop
+return o;
+}
+
+int main(){
+vector<int> d = {7,2,1,1,5,5,2,4,3};
+vector<int> b = c(d);
+for (int i=0; i<b.size(); i++){
+cout<<b[i]<<" ";
+}
+}
