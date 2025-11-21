@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+void c(int a, bool b){
+    if(b==0 && a>3){
+        cout<<"vajag";
+    }
+    else if(b==1 && a<=12){
+        cout<<"nevajag";
+    }
+    else if(b==1 && a>=13){
+        cout<<"vajag";
+    }
+    else{
+        cout<<"nevajag";
+    }
+}
+
+int main(){
+int d;
+bool a;
+    cout<<"dienas:";
+    cin>>d;
+    cout<<"vai ir succulent(1=jā, 0=nē):";
+    cin>>a;
+
+c(d,a);
+}
