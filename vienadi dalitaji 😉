@@ -1,0 +1,42 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+    
+    int ps = 0; // pirmais skaitlis
+    int os = 0; // otrais skaitlis
+    int a = 1; // programmas atkārtošanai
+    
+    while(a == 1){ //programma atkārtojas ja lietotājs ievada 1
+    
+        while( a == 1){ // īsti bezjēdzīga darbība iekavās, bet tas vienkārši uzsāk ciklu
+        
+    cout<<"Ievadi pirmo naturālo skaitli: ";
+    cin>>ps;
+    cout<<"Ievadi otro naturālo skaitli: ";
+    cin>>os;
+    
+    if(ps > 0 && os > 0){ // ja ievadītais skaitlis būs mazāks nekā 0 tad programma iziet ārā no cikla un neprasa vairs lai ievada ciparus
+        break;
+    }
+    
+    else{
+        cout<<"nepareizi ievadits skaitlis"<<endl; // ja skaitlis ir mazāks kā 0 tad atkārtojas cikls un prasa ievadi atkal
+    }
+    
+        }
+        
+    for(int i=1;i<=ps && i<=os; i++){ // cikls pildās kamēr i ir mazāks vai vienāds nekā viens no ievadītajiem skaitļiem
+    
+        if(ps%i == 0 && os%i == 0){ // ja dalot ar i gan no pirmā skaitļa gan no otrā skaitļa atlikums ir 0, tad izdrukā i konsolē
+            cout<<i<<" ";
+        }
+        
+    }
+    
+    cout<<endl<<"Vai vēlies atkārtot programmu? 1=jā; 0=nē"<<endl;
+    cin>>a;
+    
+    }
+}
