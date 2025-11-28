@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+bool T(int a, int b, int c){
+    bool p;
+    if(a<b+c && b<a+c && c<a+b){
+        return p = 1;
+    }
+    else{
+        return p = 0;
+    }
+}
+
+int main(){
+    int d;
+    int e;
+    int f;
+    cin>>d;
+    cin>>e;
+    cin>>f;
+    
+    cout<<T(d,e,f);
+}
