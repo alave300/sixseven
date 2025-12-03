@@ -1,0 +1,42 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+bool v(int a,int b,int c){
+    if(a*a+b==c && a<=b && b<=c){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+int main(){
+    int a;
+    int b;
+    int c;
+    int z = 1;
+    int x = 1;
+    int m = 1;
+int n;
+    cout<<"ievadi 3 skaitļus";
+    cin>>a>>b>>c;
+if(v(a,b,c) == 1){
+    cout<<"Derīga kombinācija"<<endl;
+    cout<<"Ievadi skaitli";
+    cin>>n;
+    for(int z=1; z<=x; z++){
+        for(int x=1; x<=m; x++){
+            for(int m=1; m<=n; m++){
+                if(z*z+x==m){
+                    cout<<z<<" "<<x<<" "<<m<<endl;
+                }
+            }
+        }
+    }
+}
+else{
+    cout<<"Nederīga kombinācija";
+}
+
+return 0;
+}
