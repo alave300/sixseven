@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int main(){
+    int n;
+cout<<"ievadi skaitli: ";
+cin>>n;
+
+vector <vector<int>> sk(n,vector<int> (n)); // n jau nosaka cik vectoru bus
+for(int i=0; i<n; i++){
+    for(int j=0; j<n; j++){
+        sk[i][j] = (i+1)*(j+1);
+    }
+}
+
+for(int i=0; i<n; i++){
+    cout<<endl;
+    for(int j=0; j<n; j++){
+        cout<<sk[i][j]<<" ";
+    }
+}
+}
