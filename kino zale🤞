@@ -1,0 +1,35 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+bool rp(vector<int> r){
+for(int i=0; i<r.size(); i++){
+  if(r[i] == 0){
+      return 0;
+  }
+}
+return 1;
+}
+bool kp(vector<vector<int>> z, int k){
+    for(int i=0; i<z.size(); i++){
+        if(z[i][k] != 0){
+            return 0;
+        }
+    }
+    return 1;
+}
+int main(){
+    int ir = 0;
+vector<vector<int>> s= {
+    {5,5,7,5,5},
+    {7,7,10,0,7},
+    {10,10,15,10,10},
+    {7,7,10,7,7},
+};
+cout<<rp(s[2]);
+for(int i=0; i<s.size(); i++){
+    if(rp(s[i]) == 1){
+        ir = ir + 1;
+    }
+}
+cout<<ir;
+}
