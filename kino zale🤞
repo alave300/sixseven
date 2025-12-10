@@ -19,17 +19,23 @@ bool kp(vector<vector<int>> z, int k){
 }
 int main(){
     int ir = 0;
+    int pk = 0;
 vector<vector<int>> s= {
     {5,5,7,5,5},
     {7,7,10,0,7},
     {10,10,15,10,10},
     {7,7,10,7,7},
 };
-cout<<rp(s[2]);
 for(int i=0; i<s.size(); i++){
     if(rp(s[i]) == 1){
         ir = ir + 1;
     }
 }
-cout<<ir;
+cout<<ir<<" ";
+for(int i=0; i<s.size(); i++){
+    if(kp(s, i) == 1){
+        pk = pk + 1;
+    }
+}
+cout<<pk;
 }
