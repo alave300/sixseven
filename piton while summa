@@ -1,0 +1,6 @@
+a = float(input("Ievadi skaitli"))
+b = 0
+while a!=0:
+    b = b + a
+    a = float(input("Ievadi skaitli"))
+print (b)
