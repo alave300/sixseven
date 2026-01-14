@@ -1,0 +1,4 @@
+cipari = [10, 15, 30, 45, 100]
+
+for liels in cipari:
+    print(liels)
