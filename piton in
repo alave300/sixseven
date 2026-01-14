@@ -1,0 +1,3 @@
+vards = "suligs"
+
+print(f"s ir saraksta: {"i" in vards}")
