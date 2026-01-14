@@ -1,0 +1,6 @@
+bilance = 320
+print (bilance)
+bilance += float(input("Cik liksiet depozītā"))
+print (bilance)
+bilance -= float(input("Cik izņemsiet no bilances"))
+print (bilance)
