@@ -1,0 +1,2 @@
+for i in range(1,int(input("ievadi skaitli "))+1):
+    print(i)
