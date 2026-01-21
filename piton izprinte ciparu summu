@@ -1,0 +1,7 @@
+a = (input("Ievadi skaitli:"))
+b = 0
+c = 0
+for cipars in a:
+    b = int(cipars)
+    c = c + b
+    print(c)
