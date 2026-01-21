@@ -5,3 +5,11 @@ for cipars in a:
     b = int(cipars)
     c = c + b
     print(c)
+
+//chatgpt
+a = input("Ievadi skaitli: ")
+summa = 0
+
+for cipars in a:
+    summa += int(cipars)
+    print(summa)
