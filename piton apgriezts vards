@@ -1,0 +1,11 @@
+a = (input("Ievadi vārdu:"))
+vards = ""
+for burts in range (len(a) - 1,-1, -1):
+    vards = vards + a[burts]
+print(vards)
+
+//chatgpt
+a = input("Ievadi vārdu: ")
+vards = a[::-1]
+
+print(vards)
