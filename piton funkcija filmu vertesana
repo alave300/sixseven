@@ -1,0 +1,11 @@
+def puddis(a):
+    if a >= 8:
+        print("Kartiga bomba")
+    elif 6<= a < 8:
+        print("Nu drusku spridzina")
+    elif 4<=a<6:
+        print("Nav boma")
+    else:
+        print ("Benjamin Netanyaho bomba")
+a = int((input("Ka patik filma?")))
+puddis(a)
